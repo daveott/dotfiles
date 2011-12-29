@@ -31,3 +31,6 @@ export BERKLEE_DIR
 
 # set cd autocompletion to commonly visited directories
 cdpath=(~ $WORK_DIR $BERKLEE_DIR $HASHROCKET_DIR)
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+[[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
