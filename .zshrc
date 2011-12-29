@@ -19,3 +19,15 @@ HISTSIZE=5000
 SAVEHIST=10000
 setopt APPEND_HISTORY
 setopt INC_APPEND_HISTORY
+
+[ -e "$WORK_DIR" ] || WORK_DIR="$HOME/work"
+export WORK_DIR
+
+[ -e "$HASHROCKET_DIR" ] || HASHROCKET_DIR="$HOME/work/hashrocket"
+export HASHROCKET_DIR
+
+[ -e "$BERKLEE_DIR" ] || BERKLEE_DIR="$HOME/work/berklee"
+export BERKLEE_DIR
+
+# set cd autocompletion to commonly visited directories
+cdpath=(~ $WORK_DIR $BERKLEE_DIR $HASHROCKET_DIR)
