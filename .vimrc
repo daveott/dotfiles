@@ -18,7 +18,6 @@ set laststatus=2
 set showmatch
 set incsearch
 set hls
-set cursorline
 set switchbuf=useopen
 
 let mapleader=","
