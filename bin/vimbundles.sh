@@ -25,6 +25,13 @@ get_bundle tpope vim-haml
 get_bundle tpope vim-pathogen
 get_bundle tpope vim-rails
 get_bundle tpope vim-repeat
+get_bundle tpope vim-speeddating
 get_bundle tpope vim-surround
 get_bundle tpope vim-unimpaired
+get_bundle tpope vim-ragtag
 get_bundle vim-ruby vim-ruby
+get_bundle jgdavey vim-blockle
+get_bundle jgdavey tslime.vim
+get_bundle wgibbs vim-irblack
+get_bundle adamlowe vim-slurper
+get_bundle godlygeek tabular
