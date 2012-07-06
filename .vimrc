@@ -40,6 +40,8 @@ if &statusline == ''
 endif
 set ttimeoutlen=50  " Make Esc work faster
 set wildmenu
+set number
+set splitbelow
 
 if $TERM == '^\%(screen\|xterm-color\)$' && t_Co == 8
   set t_Co=16
@@ -175,4 +177,14 @@ augroup hashrocket
   autocmd User Rails Rnavcommand support spec/support features/support -default=env
   autocmd User Rails Rnavcommand worker app/workers -suffix=_worker.rb -default=model()
   autocmd User Fugitive command! -bang -bar -buffer -nargs=* Gpr :Git<bang> pull --rebase <args>
+
+  set guifont=Menlo:h14
+  set guioptions-=T guioptions-=e guioptions-=L guioptions-=r
+  set shell=bash
+
+  augroup vimrc
+    autocmd!
+    autocmd GuiEnter * set columns=120 lines=70 number
+  augroup END
+  colors molokai
 augroup END
